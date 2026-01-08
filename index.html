@@ -1,33 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
     
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milestone 2 - Bagas Aditya Fadly</title>
+    <meta name="description" content="Duramé is a playful fusion of the Japanese words 'durable' and 'game'. Your destination for simple games that bring joy and entertainment to your day.">
+    <meta name="keywords" content="Duramé, games, simple games, entertainment, javascript games">
+    <meta name="author" content="Bagas Aditya Fadly">
+
+    <title>Duramé</title>
+
     <link rel="stylesheet" href="./css/index.css">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Science+Gothic:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
 </head>
 
-<body class="bg-black text-white">
-    <header class="">
-        <!-- HEADER -->
-        <h1>Duramé</h1>
-        <div class="">
-            <nav>
-                <ul class="flex gap-4 justify-center">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+<body>
+    
+    <!-- HEADER -->
+    <header id="navigation" class="m-4 md:m-20 md:p-10 pb-7">
+        <div class="text-[25px] flex justify-between items-center md:text-[50px]">
+            <h1>Duramé</h1>
+            <div class="">
+                <nav>
+                    <ul class="flex gap-4 justify-center hidden md:flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#game">Games</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main>
-        <section>
+    <main class="m-4 md:m-10 pb-7 md:p-20 text-[20px] md:text-[30px]">
+        <section id="introduction" class="pb-7 md:pb-30">
             <article>
                 <p><b>Duramé</b> (でゅらめ) is a playful fusion of the 
                     Japanese words <i>"durable"</i> and <i>"game"</i>.
@@ -38,8 +53,8 @@
                 </p>
             </article>
         </section>
-        <section class="flex">
-            <img src="asset/image1.jpg" alt="image1" class="h-[400px] w-full object-cover md:h-[530px] md:w-[300px]">
+        <section class="flex flex-col md:flex-row text-[20px] md:text-[30px] gap-8  pb-7">
+            <img src="asset/image1.jpg" alt="image1" class="rounded-[10px] md:rounded-[40px] h-[200px] w-full object-cover image-wrapper md:h-[700px] md:w-[700px]">
             <article>
                <p>
                 Let's Play
@@ -47,11 +62,42 @@
                 Explore our collection of engaging games designed to
                 provide hours of fun and excitement.
                 <br>
-                <a class="bg-gray-400 text-white" href="">Our Games</a>
-                <a class="bg-black" href="">About Us</a>
+                </p>
+                <p class="mt-4 flex gap-4">
+                <a class="rounded-lg bg-white text-black px-4 py-2" href="#game">Our Games</a>
+                <a class="  px-4 py-2" href="">About Us</a>
                </p>
             </article>
         </section>
+        <section id="game">
+            <div class="pb-7 md:pb-30 pt-7 md:pt-30">
+                <h2>Our Games</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                    <div class="game-card p-4 border rounded-lg">
+                        <a href="./games/rps.html">
+                            <img src="./asset/rps.jpg" alt="Game 1" class="w-full h-48 object-cover mb-4 md:">
+                            <h3 class="text-xl mb-2">Rock Scissor Paper</h3>
+                            <p>Test your luck against the computer in this classic game of rock, paper, scissors.</p>
+                        </a>
+                    </div>
+                    <div class="game-card border rounded-lg">
+                        <a href="./games/clicker.html">
+                            <img src="./asset/clicker.png" alt="Game 2" class="w-full h-48 object-cover mb-4">
+                            <h3 class="text-xl mb-2">Clicker</h3>    
+                            <p>Click as fast as you can to score points and beat your high score!</p>
+                        </a>
+                    </div>
+                    <div class="game-card p-4 border rounded-lg">
+                        <a href="./games/ng.html">
+                            <img src="./asset/numberguess.png" alt="Game 3" class="w-full h-48 object-cover mb-4">
+                            <h3 class="text-xl mb-2">Number Guess</h3>
+                            <p>Guess the number the computer is thinking of in as few attempts as possible.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- FOOTER -->

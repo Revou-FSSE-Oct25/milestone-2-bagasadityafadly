@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duramé is a playful fusion of the Japanese words 'durable' and 'game'. Your destination for simple games that bring joy and entertainment to your day.">
+    <meta name="keywords" content="Duramé, games, simple games, entertainment, javascript games">
+    <meta name="author" content="Bagas Aditya Fadly">
 
+    <title>Duramé</title>
+
+    <link rel="stylesheet" href="/milestone-2-bagasadityafadly/css/index.css">
+    <link rel="stylesheet" href="/milestone-2-bagasadityafadly/css/rps.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+    <header id="navigation" class="m-4 md:p-10 pb-7">
+        <div class="text-[25px] flex justify-between items-center md:text-[50px]">
+            <h1><a href="/milestone-2-bagasadityafadly/index.html">Duramé</a></h1>
+            <div class="">
+                <nav>
+                    <ul class="flex gap-4 justify-center hidden md:flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#game">Games</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section id="numberguess" class="card text-center rounded-lg m-4  pb-7 md:pb-7 md:p-20 text-[20px] md:text-[20px]">
+            <article class="pb-7 md:pb-30">
+                <h2 class="pb-4 text-center">Number Guessing Game</h2>
+                <p class="pb-8">Guess a number between 1 and 100:</p>
+                <div class="game-container flex flex-col items-center gap-6">
+                    <input type="number" id="user-guess" class="p-2 border rounded-[10px] w-44 text-center" placeholder="Your Guess">
+                    <button id="submit-btn" class="choice-btn cursor-pointer p-2 border rounded-[10px] bg-blue-500 hover:bg-blue-600">Submit Guess</button>
+                    <div class="results text-center">
+                        <h3 id="feedback" class="pb-2">Make your guess!</h3>
+                        <p id="attempts">Attempts: 0</p>
+                    </div>
+                    <button id="reset-btn" class="choice-btn cursor-pointer mt-4 p-2 border rounded-[10px] bg-red-500 hover:bg-red-600">Reset Game</button>
+                </div>
+            </article>
+        
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>@2025 Duramé. All rights reserved.</p>
+    </footer>
+    <script src="/milestone-2-bagasadityafadly/js/ng.js"></script>
+</body>
+</html>
